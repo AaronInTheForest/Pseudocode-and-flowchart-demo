@@ -4,14 +4,15 @@ EASY
 
 Start
 Set arrayOfNumbers = input
-Set minNumber = arrayOfNumbers[0]
-Set maxNumber = arrayOfNumbers[0]
+Set minNumber = 100000000000000000000000000000000000000000000000000000000000000000
+Set maxNumber = 0
 
 ForEach(number in arrayOfNumbers){
     if(number > maxNumber){
         maxNumber = number
     }
-    if(number < maxNumber){
+    
+    if(number < minNumber){
         minNumber = number
     }
 }
