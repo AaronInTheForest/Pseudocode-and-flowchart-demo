@@ -1,0 +1,29 @@
+https://edabit.com/challenge/SXeEZPxDM9Y5HzLvw
+Create a function that takes an array of positive and negative numbers. Return an array where the first element is the count of positive numbers and the second element is the sum of negative numbers.
+MEDIUM
+
+Start
+Set randomNumberArray = input
+Set positiveNumberArray = []
+Set negativeNumberArray = []
+Set count = 0
+set sum = 0
+
+ForEach (number in randomNumberArray){
+    if(number >= 0){
+        positiveNumberArray.add(number)
+    }else{
+        negativeNumberArray.add(number)
+    }
+}
+
+ForEach(number in positiveNumberArray){
+    count = count + 1
+}
+
+ForEach(number in negativeNumberArray){
+    sum = sum + number
+}
+
+Print "The count of positive numbers is " + count
+Print "The sum of negative numbers is " + sum

@@ -1,0 +1,21 @@
+https://edabit.com/challenge/Q3n42rEWanZSTmsJm
+Create a function that takes an array of numbers and return both the minimum and maximum numbers, in that order.
+EASY
+
+Start
+Set arrayOfNumbers = input
+Set minNumber = arrayOfNumbers[0]
+Set maxNumber = arrayOfNumbers[0]
+
+ForEach(number in arrayOfNumbers){
+    if(number > maxNumber){
+        maxNumber = number
+    }
+    if(number < maxNumber){
+        minNumber = number
+    }
+}
+
+Print minNumber
+Print maxNumber
+End
